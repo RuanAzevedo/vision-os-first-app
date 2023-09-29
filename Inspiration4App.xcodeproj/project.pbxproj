@@ -12,6 +12,13 @@
 		1CB8C3502AC45D9F0058A190 /* Crew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB8C34F2AC45D9F0058A190 /* Crew.swift */; };
 		1CB8C3522AC45F260058A190 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB8C3512AC45F260058A190 /* ViewModel.swift */; };
 		1CB8C3562AC460430058A190 /* NavigationToAreas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB8C3552AC460430058A190 /* NavigationToAreas.swift */; };
+		1CB8C3582AC46D9C0058A190 /* CrewArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB8C3572AC46D9C0058A190 /* CrewArea.swift */; };
+		1CDB7C932AC663950048D6A5 /* EquipmentArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB7C922AC663950048D6A5 /* EquipmentArea.swift */; };
+		1CDB7C962AC66A4A0048D6A5 /* CapsuleRealityArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB7C952AC66A4A0048D6A5 /* CapsuleRealityArea.swift */; };
+		1CDB7C982AC66A630048D6A5 /* FullRocketRealityArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB7C972AC66A630048D6A5 /* FullRocketRealityArea.swift */; };
+		1CDB7C9A2AC67F3B0048D6A5 /* MissionArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB7C992AC67F3B0048D6A5 /* MissionArea.swift */; };
+		1CDB7C9D2AC67F610048D6A5 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CDB7C9C2AC67F610048D6A5 /* AVKit.framework */; };
+		1CDB7CA02AC680150048D6A5 /* Inspiration4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1CDB7C9F2AC67FF80048D6A5 /* Inspiration4.mp4 */; };
 		1CDF22432AC3E56E00723F10 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 1CDF22422AC3E56E00723F10 /* RealityKitContent */; };
 		1CDF22452AC3E56E00723F10 /* Inspiration4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF22442AC3E56E00723F10 /* Inspiration4App.swift */; };
 		1CDF224B2AC3E56E00723F10 /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 1CDF224A2AC3E56E00723F10 /* ImageBasedLighting.skybox */; };
@@ -36,6 +43,13 @@
 		1CB8C34F2AC45D9F0058A190 /* Crew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crew.swift; sourceTree = "<group>"; };
 		1CB8C3512AC45F260058A190 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		1CB8C3552AC460430058A190 /* NavigationToAreas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationToAreas.swift; sourceTree = "<group>"; };
+		1CB8C3572AC46D9C0058A190 /* CrewArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewArea.swift; sourceTree = "<group>"; };
+		1CDB7C922AC663950048D6A5 /* EquipmentArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentArea.swift; sourceTree = "<group>"; };
+		1CDB7C952AC66A4A0048D6A5 /* CapsuleRealityArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleRealityArea.swift; sourceTree = "<group>"; };
+		1CDB7C972AC66A630048D6A5 /* FullRocketRealityArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullRocketRealityArea.swift; sourceTree = "<group>"; };
+		1CDB7C992AC67F3B0048D6A5 /* MissionArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionArea.swift; sourceTree = "<group>"; };
+		1CDB7C9C2AC67F610048D6A5 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		1CDB7C9F2AC67FF80048D6A5 /* Inspiration4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inspiration4.mp4; sourceTree = "<group>"; };
 		1CDF223D2AC3E56E00723F10 /* Inspiration4App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inspiration4App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDF22412AC3E56E00723F10 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		1CDF22442AC3E56E00723F10 /* Inspiration4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspiration4App.swift; sourceTree = "<group>"; };
@@ -52,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CDB7C9D2AC67F610048D6A5 /* AVKit.framework in Frameworks */,
 				1CDF22432AC3E56E00723F10 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +86,9 @@
 			children = (
 				1CB8C3492AC3F5670058A190 /* Areas.swift */,
 				1CB8C3552AC460430058A190 /* NavigationToAreas.swift */,
+				1CB8C3572AC46D9C0058A190 /* CrewArea.swift */,
+				1CDB7C922AC663950048D6A5 /* EquipmentArea.swift */,
+				1CDB7C992AC67F3B0048D6A5 /* MissionArea.swift */,
 			);
 			path = Areas;
 			sourceTree = "<group>";
@@ -85,6 +103,31 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		1CDB7C942AC669EF0048D6A5 /* RealityViews */ = {
+			isa = PBXGroup;
+			children = (
+				1CDB7C952AC66A4A0048D6A5 /* CapsuleRealityArea.swift */,
+				1CDB7C972AC66A630048D6A5 /* FullRocketRealityArea.swift */,
+			);
+			path = RealityViews;
+			sourceTree = "<group>";
+		};
+		1CDB7C9B2AC67F610048D6A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CDB7C9C2AC67F610048D6A5 /* AVKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CDB7C9E2AC67F740048D6A5 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				1CDB7C9F2AC67FF80048D6A5 /* Inspiration4.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		1CDF22342AC3E56E00723F10 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +135,7 @@
 				1CDF22402AC3E56E00723F10 /* Packages */,
 				1CDF22592AC3E57000723F10 /* Inspiration4AppTests */,
 				1CDF223E2AC3E56E00723F10 /* Products */,
+				1CDB7C9B2AC67F610048D6A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,12 +151,14 @@
 		1CDF223F2AC3E56E00723F10 /* Inspiration4App */ = {
 			isa = PBXGroup;
 			children = (
-				1CB8C34C2AC3F7590058A190 /* Models */,
 				1CB8C34B2AC3F5940058A190 /* Areas */,
-				1CDF22442AC3E56E00723F10 /* Inspiration4App.swift */,
+				1CB8C34C2AC3F7590058A190 /* Models */,
+				1CDB7C942AC669EF0048D6A5 /* RealityViews */,
+				1CDB7C9E2AC67F740048D6A5 /* Videos */,
 				1CDF224A2AC3E56E00723F10 /* ImageBasedLighting.skybox */,
 				1CDF224C2AC3E56F00723F10 /* Assets.xcassets */,
 				1CDF22512AC3E56F00723F10 /* Info.plist */,
+				1CDF22442AC3E56E00723F10 /* Inspiration4App.swift */,
 				1CDF224E2AC3E56F00723F10 /* Preview Content */,
 			);
 			path = Inspiration4App;
@@ -226,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CDB7CA02AC680150048D6A5 /* Inspiration4.mp4 in Resources */,
 				1CDF224D2AC3E56F00723F10 /* Assets.xcassets in Resources */,
 				1CDF22502AC3E56F00723F10 /* Preview Assets.xcassets in Resources */,
 				1CDF224B2AC3E56E00723F10 /* ImageBasedLighting.skybox in Resources */,
@@ -247,11 +294,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CB8C3522AC45F260058A190 /* ViewModel.swift in Sources */,
+				1CDB7C9A2AC67F3B0048D6A5 /* MissionArea.swift in Sources */,
 				1CB8C34A2AC3F5670058A190 /* Areas.swift in Sources */,
 				1CB8C34E2AC3F7660058A190 /* Area.swift in Sources */,
+				1CB8C3582AC46D9C0058A190 /* CrewArea.swift in Sources */,
 				1CB8C3562AC460430058A190 /* NavigationToAreas.swift in Sources */,
+				1CDB7C962AC66A4A0048D6A5 /* CapsuleRealityArea.swift in Sources */,
+				1CDB7C982AC66A630048D6A5 /* FullRocketRealityArea.swift in Sources */,
 				1CB8C3502AC45D9F0058A190 /* Crew.swift in Sources */,
 				1CDF22452AC3E56E00723F10 /* Inspiration4App.swift in Sources */,
+				1CDB7C932AC663950048D6A5 /* EquipmentArea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

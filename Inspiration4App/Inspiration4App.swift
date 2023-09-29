@@ -9,10 +9,22 @@ import SwiftUI
 
 @main
 struct Inspiration4App: App {
+    @State private var model = ViewModel()
+    
     var body: some Scene {
-        WindowGroup {
-            Areas()
+        WindowGroup("Main Areas", id: "Areas") {
+            Areas().environment(model)
         }
-        .defaultSize(CGSize(width: 200, height: 200))
+        
+        WindowGroup(id: "CapsuleRealityArea"){
+            CapsuleRealityArea().environment(model)
+        }
+        .windowStyle(.volumetric)
+        .defaultSize(width: 0.6, height: 0.6, depth: 0.6, in: .meters)
+        
+        ImmersiveSpace(id: "FullRocketRealityArea") {
+            FullRocketRealityArea().environment(model)
+        }
+        .immersionStyle(selection: .constant(.full), in: .full)
     }
 }

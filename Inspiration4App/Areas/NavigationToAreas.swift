@@ -10,23 +10,41 @@ import SwiftUI
 struct NavigationToAreas: View {
     var body: some View {
         VStack {
-            NavigationLink {
-                Text("Hello World 1 nav 1")
-            } label : {
-                Label("Hey 1", systemImage: "chevron.right")
-            }
+            Text("Welcome To The Inspiration 4 Mission By SpaceX")
+                .monospaced()
+                .font(.system(size: 40, weight: .bold))
+                .padding(.top, 250)
             
-            NavigationLink {
-                Text("Hello World 2 nav 2")
-            } label : {
-                Label("Hey 2", systemImage: "chevron.right")
+            HStack(spacing: 25) {
+                ForEach(Area.allCases) { area in
+                    NavigationLink {
+                        Text(area.title)
+                            .monospaced()
+                            .font(.system(size: 40, weight: .bold))
+                        
+                        if area == Area.astronauts {
+                            CrewArea()
+                        }
+                        else if area == Area.equipment {
+                            EquipmentArea()
+                        }
+                        else if area == Area.mission {
+                            MissionArea()
+                        }
+                        
+                        Spacer()
+                        
+                    } label:{
+                        Label(area.name, systemImage: "chevron.right")
+                            .monospaced()
+                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    }
+                    .controlSize(.extraLarge)
+                }
             }
-            
-            NavigationLink {
-                Text("Hello World 3 nav 3")
-            } label : {
-                Label("Hey 3", systemImage: "chevron.right")
-            }
+        }
+        .background() {
+            Image("Inspiration4")
         }
     }
 }
